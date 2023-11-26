@@ -1,0 +1,297 @@
+<!-- Повідомляємо браузеру, як варто обробляти цю сторінку. -->
+<!DOCTYPE html>
+<!--Оболонка документа, вказуємо мову вмісту -->
+<html lang="ua">
+<!-- Заголовок сторінки, контейнер для інших важливих даних (не відображається) -->
+
+<head>
+    <!--Заголовок сторінки у браузері -->
+    <title>ЛР 3 Демченко</title>
+    <!-- Підключаєм CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Кодування  сторінки -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<!-- Тіло сторінки, що відображається -->
+
+<body>
+    <!-- <img src="img/foto.png" alt=""> -->
+
+    <header class="header">
+        <a href="index.html">
+            <img src="img/logo.png" alt="" class="logohead"> </a>
+        <nav class="navmain">
+            <div class="navleft">
+
+                <a href="index.html">
+                    <div class="navleft_left" style="color: #ffffff ;">
+                        ГОЛОВНА
+                    </div>
+                </a>
+                <div class="navleft_right" style="color: #00ffa3 ;" onmouseover="highlightNavleftLeft()"
+                    onmouseout="removeHighlightNavleftLeft()">
+                    КАТЕГОРІЇ
+                </div>
+
+            </div>
+            <div class="navright">
+
+                <div class="navright_left">
+                    <a href="profile_basket.html"> <img src="img/icon_basket.png" alt=""> </a>
+                </div>
+
+                <div class="navright_right">
+
+                    <a href="profile.html"> <img src="img/icon_profile.png" alt=""> </a>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <script>
+        function highlightNavleftLeft() {
+            // document.querySelector('.navleft_left').classList.add('highlight');
+            document.querySelector('.categories').classList.add('highlight')
+        }
+
+        function removeHighlightNavleftLeft() {
+            // document.querySelector('.navleft_left').classList.remove('highlight');
+            // document.querySelector('.categories').classList.remove('highlight');
+        }
+    </script>
+    <script>
+
+
+        function removecateg() {
+            // document.querySelector('.navleft_left').classList.remove('highlight');
+            document.querySelector('.categories').classList.remove('highlight');
+        }
+    </script>
+
+
+
+
+
+    <main class="main">
+
+        <div class="categories" onmouseout="removecateg()">
+            <a href="men_shoes.html">
+                <div class="category"> ЧОЛОВІЧЕ ВЗУТТЯ </div>
+            </a>
+
+            <a href="women_shoes.html">
+                <div class="category"> ЖІНОЧЕ ВЗУТТЯ </div>
+            </a>
+
+            <a href="accesoars.html">
+                <div class="category"> АКСЕСУАРИ </div>
+            </a>
+
+            <a href="new_shoes.html">
+                <div class="category"> НОВИНКИ </div>
+            </a>
+
+            <a href="sale.html">
+                <div class="category"> РОЗПРОДАЖ </div>
+            </a>
+
+
+
+
+
+        </div>
+        <div class="categorieshide"> </div>
+
+
+
+        <h1 class="h1categ"> ЖІНОЧЕ ВЗУТТЯ </h1>
+
+        <div class="cardsincategories">
+
+            <div class="cardsincategoriesrow">
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j1.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2"> Жіночі кросівки W Nike Court Vision Alta Ltr (DM0113-100)</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j2.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2"> Кросівки Жіночі Nike Air Max Furyosa (DH0531-101)</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j3.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2"> Жіночі кросівки Wmns Nike Air Zoom Pegasus 39</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cardsincategoriesrow">
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j4.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2"> Жіночі кросівки Wmns Nike Air Zoom Pegasus 39</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j5.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2">Жіночі кросівки Wmns Air Zoom Pegasus 38 Mfs</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j6.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2"> Жіночі кросівки Wmns Air Zoom Pegasus 38 Mfs</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cardsincategoriesrow">
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j7.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2"> Жіночі кросівки W Nike React Pegasus Trail 4 (DJ6159-800)</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j8.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2"> Жіночі кросівки Wmns Nike Waffle One (DQ0855-600)</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cardsincategorieskard">
+                    <div class="kard2top"><img src="img/womenshoes/j9.png" alt=""></div>
+                    <div class="kard2bottom">
+                        <span class="spanincard2"> Жіночі кросівки W Nike Air Force 1 07 (DQ0826-100)</span>
+                        <span class="spanincard2"> Розміри: 37, 19, 42, 43, 45</span>
+                        <span class="spanincardbig"> 2299 грн </span>
+                        <div class="buttoncard2">
+
+                            <span class="spaninbuttoncard2"> КУПИТИ </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- dostavka -->
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footright">
+            <div class="footlogo">
+                <a href="index.html">
+                    <img src="img/logobig.png" alt="">
+                </a>
+            </div>
+            <div class="footsecond">
+                <span class="footsecondspan"> © 2022 ТОВ “КРОССВІТ”
+                    Спортивне взуття</span>
+
+            </div>
+            <div class="footthird">
+                <span class="footthirdspan" style="font-size: 32px; margin-top: 24px;"> Для зв`язку з нашим
+                    менежером</span>
+                <span class="footthirdspan" style=" margin-top: 9px;"> +380953355142</span>
+                <span class=" footthirdspan" style=" margin-top: 18px;"> Наші соцмережі:</span>
+
+                <div class="divfootsoc">
+
+
+                    <img src="img/insta.png" style="border-radius: 30%;" alt="">
+                    <img src="img/telega.png" alt="">
+                    <img src="img/facebok.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>

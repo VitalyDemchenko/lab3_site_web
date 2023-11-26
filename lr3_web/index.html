@@ -1,0 +1,537 @@
+<!-- Повідомляємо браузеру, як варто обробляти цю сторінку. -->
+<!DOCTYPE html>
+<!--Оболонка документа, вказуємо мову вмісту -->
+<html lang="ua">
+<!-- Заголовок сторінки, контейнер для інших важливих даних (не відображається) -->
+
+<head>
+    <!--Заголовок сторінки у браузері -->
+    <title>ЛР 3 Демченко</title>
+    <!-- Підключаєм CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Кодування  сторінки -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<!-- Тіло сторінки, що відображається -->
+
+<body>
+    <!-- <img src="img/foto.png" alt=""> -->
+
+    <header class="header">
+        <a href="">
+            <img src="img/logo.png" alt="" class="logohead"> </a>
+        <nav class="navmain">
+            <div class="navleft">
+
+                <a href="index.html">
+                    <div class="navleft_left">
+                        ГОЛОВНА
+                    </div>
+                </a>
+                <div class="navleft_right" onmouseover="highlightNavleftLeft()"
+                    onmouseout="removeHighlightNavleftLeft()">
+                    КАТЕГОРІЇ
+                </div>
+
+            </div>
+            <div class="navright">
+
+                <div class="navright_left">
+                    <a href="profile_basket.html"> <img src="img/icon_basket.png" alt=""> </a>
+                </div>
+
+                <div class="navright_right">
+
+                    <a href="profile.html"> <img src="img/icon_profile.png" alt=""> </a>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <script>
+        function highlightNavleftLeft() {
+            // document.querySelector('.navleft_left').classList.add('highlight');
+            document.querySelector('.categories').classList.add('highlight')
+        }
+
+        function removeHighlightNavleftLeft() {
+            document.querySelector('.navleft_left').classList.remove('highlight');
+            // document.querySelector('.categories').classList.remove('highlight');
+        }
+    </script>
+    <script>
+
+
+        function removecateg() {
+            // document.querySelector('.navleft_left').classList.remove('highlight');
+            document.querySelector('.categories').classList.remove('highlight');
+        }
+    </script>
+
+
+
+
+
+    <main class="main">
+
+        <div class="categories" onmouseout="removecateg()">
+            <a href="men_shoes.html">
+                <div class="category"> ЧОЛОВІЧЕ ВЗУТТЯ </div>
+            </a>
+
+            <a href="women_shoes.html">
+                <div class="category"> ЖІНОЧЕ ВЗУТТЯ </div>
+            </a>
+
+            <a href="accesoars.html">
+                <div class="category"> АКСЕСУАРИ </div>
+            </a>
+
+            <a href="new_shoes.html">
+                <div class="category"> НОВИНКИ </div>
+            </a>
+
+            <a href="sale.html">
+                <div class="category"> РОЗПРОДАЖ </div>
+            </a>
+
+
+
+
+
+        </div>
+
+
+        <div class="nemoj">
+            <img src="img/rectnemm.png" alt="">
+            <div class="nemojtx">
+                <span class="nemsp1">
+                    НЕМОЖЛИВЕ
+                </span>
+                <span class="nemsp2">
+                    МОЖЛИВО
+                </span>
+                <span class="nemp">
+                    Найкраще спортивне взуття <br>
+                    в якому ви легко здолаєте <br>
+                    будь-які перешкоди
+                </span>
+                <a href="new_shoes.html">
+                    <div class="button1">
+                        <span class="button1text">ЗАМОВИТИ НЕГАЙНО</span>
+                    </div>
+                </a>
+            </div>
+            <img src="img/elipse.png" alt="" class="ell1">
+            <img src="img/krosmain.png" alt="" class="imgkrosmain">
+        </div>
+
+        <h1> ХІТИ ПРОДАЖІВ</h1>
+        <div class="cardskros">
+
+            <div class="cards1">
+
+                <div class="cards11">
+                    <div class="cardfromk1">
+                        <div class="cardfromk1top"> <img src="img/gk1.png" alt=""> </div>
+
+                        <div class="cardfromk1bottom">
+
+                            <span class="spancard1"> НАЗВА ВЗУТТЯ</span>
+                            <div class="krugsandspan">
+
+                                <div class="krugscard1">
+                                    <div class="krug1"> <span class="textinkrug"> 37 </span></div>
+                                    <div class="krug1"> <span class="textinkrug"> 39 </span></div>
+                                    <div class="krug1"><span class="textinkrug"> 43 </span> </div>
+                                </div>
+                                <span class="spancard2"> ₴2999</span>
+
+                            </div>
+                            <a href="new_shoes.html">
+                                <div class="buttonkards1">
+                                    <span class="buytextkards1"> КУПИТИ </span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="cardfromk1">
+                        <div class="cardfromk1top"> <img class="imgincardskros1" src="img/gk2.png" alt=""> </div>
+
+                        <div class="cardfromk1bottom">
+
+                            <span class="spancard1"> НАЗВА ВЗУТТЯ</span>
+                            <div class="krugsandspan">
+
+                                <div class="krugscard1">
+                                    <div class="krug1"> <span class="textinkrug"> 37 </span></div>
+                                    <div class="krug1"> <span class="textinkrug"> 39 </span></div>
+                                    <div class="krug1"><span class="textinkrug"> 43 </span> </div>
+                                </div>
+                                <span class="spancard2"> ₴2999</span>
+
+                            </div>
+                            <a href="new_shoes.html">
+                                <div class="buttonkards1">
+                                    <span class="buytextkards1"> КУПИТИ </span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="cardfromk1">
+                        <div class="cardfromk1top"> <img src="img/gk3.png" alt=""> </div>
+
+                        <div class="cardfromk1bottom">
+
+                            <span class="spancard1"> НАЗВА ВЗУТТЯ</span>
+                            <div class="krugsandspan">
+
+                                <div class="krugscard1">
+                                    <div class="krug1"> <span class="textinkrug"> 37 </span></div>
+                                    <div class="krug1"> <span class="textinkrug"> 39 </span></div>
+                                    <div class="krug1"><span class="textinkrug"> 43 </span> </div>
+                                </div>
+                                <span class="spancard2"> ₴2999</span>
+
+                            </div>
+                            <a href="new_shoes.html">
+                                <div class="buttonkards1">
+                                    <span class="buytextkards1"> КУПИТИ </span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="cards12">
+                    <div class="cardfromk1">
+                        <div class="cardfromk1top"><img src="img/gk4.png" alt=""> </div>
+
+                        <div class="cardfromk1bottom">
+
+                            <span class="spancard1"> НАЗВА ВЗУТТЯ</span>
+                            <div class="krugsandspan">
+
+                                <div class="krugscard1">
+                                    <div class="krug1"> <span class="textinkrug"> 37 </span></div>
+                                    <div class="krug1"> <span class="textinkrug"> 39 </span></div>
+                                    <div class="krug1"><span class="textinkrug"> 43 </span> </div>
+                                </div>
+                                <span class="spancard2"> ₴2999</span>
+
+                            </div>
+                            <a href="new_shoes.html">
+                                <div class="buttonkards1">
+                                    <span class="buytextkards1"> КУПИТИ </span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="cardfromk1">
+                        <div class="cardfromk1top"><img src="img/gk5.png" alt=""> </div>
+
+                        <div class="cardfromk1bottom">
+
+                            <span class="spancard1"> НАЗВА ВЗУТТЯ</span>
+                            <div class="krugsandspan">
+
+                                <div class="krugscard1">
+                                    <div class="krug1"> <span class="textinkrug"> 37 </span></div>
+                                    <div class="krug1"> <span class="textinkrug"> 39 </span></div>
+                                    <div class="krug1"><span class="textinkrug"> 43 </span> </div>
+                                </div>
+                                <span class="spancard2"> ₴2999</span>
+
+                            </div>
+                            <a href="new_shoes.html">
+                                <div class="buttonkards1">
+                                    <span class="buytextkards1"> КУПИТИ </span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+                    <div class="cardfromk1">
+                        <div class="cardfromk1top"> <img src="img/gk6.png" alt=""></div>
+
+                        <div class="cardfromk1bottom">
+
+                            <span class="spancard1"> НАЗВА ВЗУТТЯ</span>
+                            <div class="krugsandspan">
+
+                                <div class="krugscard1">
+                                    <div class="krug1"> <span class="textinkrug"> 37 </span></div>
+                                    <div class="krug1"> <span class="textinkrug"> 39 </span></div>
+                                    <div class="krug1"><span class="textinkrug"> 43 </span> </div>
+                                </div>
+                                <span class="spancard2"> ₴2999</span>
+
+                            </div>
+                            <a href="new_shoes.html">
+                                <div class="buttonkards1">
+                                    <span class="buytextkards1"> КУПИТИ </span>
+                                </div>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <!-- dostavka -->
+
+        <div class="dostav">
+
+            <h2>СПОСОБИ ДОСТАВКИ</h2>
+            <div class="kardsdost">
+                <div class="dostkard">
+                    <div class="dostkardtop"> <img src="img/novpost.png" alt=""></div>
+                    <div class="dostkardbottom">
+                        <span class="spandostkart" style="font-size: 36px;"> Нова Пошта </span>
+                        <span class="spandostkart" style="margin-top: 36px;"> Доставка 2-3 дні </span>
+                        <span class="spandostkart" style="margin-top: 19px;"> Вартість доставки від 50 грн </span>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="dostkard">
+                    <div class="dostkardtop"> <img src="img/justin.png" alt=""></div>
+                    <div class="dostkardbottom">
+                        <span class="spandostkart" style="font-size: 36px;"> Нова Пошта </span>
+                        <span class="spandostkart" style="margin-top: 36px;"> Доставка 2-3 дні </span>
+                        <span class="spandostkart" style="margin-top: 19px;"> Вартість доставки від 50 грн </span>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="dostkard">
+                    <div class="dostkardtop"> <img src="img/ukrpost.png" alt=""></div>
+                    <div class="dostkardbottom">
+                        <span class="spandostkart" style="font-size: 36px;"> Нова Пошта </span>
+                        <span class="spandostkart" style="margin-top: 36px;"> Доставка 2-3 дні </span>
+                        <span class="spandostkart" style="margin-top: 19px;"> Вартість доставки від 50 грн </span>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="garantjak">
+
+            <h2> ГАРАНТІЇ ЯКОСТІ </h2>
+            <div class="garantjakright">
+
+                <div class="garantjakrightleft"> <img src="img/garjak.png" alt=""></div>
+                <div class="garantjakrightright">
+                    <p class="garjaktext"> &#9; Ми віримо в якість нашого взуття та стоїмо за кожною парою, яку ми
+                        створюємо.
+                        <br> Ваше задоволення та комфорт - наш головний пріоритет.
+                        Тому ми надаємо гарантію якості на всі наші вироби.
+                    </p>
+
+                    <div class="garantspis">
+
+                        <div class="grjakspiselem">
+                            <div class="grjakspiselemkrug"> </div>
+                            <span class="grjakspiselemspan"> ВЕЛИКИЙ ДОСВІД СТВОРЕННЯ ВЗУТТЯ </span>
+
+                        </div>
+                        <div class="grjakspiselem">
+                            <div class="grjakspiselemkrug"> </div>
+                            <span class="grjakspiselemspan"> ПОНАД 4000 ЗАДОВОЛЕНИХ КЛІЄНТІВ </span>
+
+                        </div>
+                        <div class="grjakspiselem">
+                            <div class="grjakspiselemkrug"> </div>
+                            <span class="grjakspiselemspan"> ІНДИВІДУАЛЬНИЙ ПІДХІД </span>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="vidgyki">
+            <h2> ВІДГУКИ </h2>
+
+            <div class="kardsvidgyki">
+
+                <div class="vidgkard">
+
+                    <div class="vidgkardtop">
+                        <div class="vidgkardtopleft">
+                            <img class="fotovidguk" src="img/taras.png" alt="">
+
+                        </div>
+                        <div class="vidgkardtopright">
+                            <span class="spanvidgkartname" style="margin-top: 30px; margin-left: 12px;">Тарас
+                                Мельник </span>
+                            <span class="spanvidgkartname" style="margin-top: 10px; margin-left: 12px;">
+                                Любить
+                                подорожувати</span>
+
+                        </div>
+
+
+                    </div>
+                    <div class="vidgkardbottom">
+
+                        <span class="spanvidgkart">"Дуже задоволений своїм досвідом покупки у цьому магазині кросівок!
+                            Персонал був дуже комунікабельний, вони
+                            відповіли на всі мої питання та надали професійні поради. Також, велика подяка за швидку
+                            доставку моєї покупки - отримав
+                            свої кросівки точно вчасно, як обіцяли. Я рекомендую цей магазин усім своїм друзям!" </span>
+                    </div>
+                </div>
+                <div class="vidgkard">
+
+                    <div class="vidgkardtop">
+                        <div class="vidgkardtopleft">
+                            <img class="fotovidguk" src="img/ivan.png" alt="">
+
+                        </div>
+                        <div class="vidgkardtopright">
+                            <span class="spanvidgkartname" style="margin-top: 30px; margin-left: 12px;">Іван
+                                Мокляк </span>
+                            <span class="spanvidgkartname" style="margin-top: 10px; margin-left: 12px;">
+                                Спортсмен</span>
+
+                        </div>
+
+
+                    </div>
+                    <div class="vidgkardbottom">
+
+                        <span class="spanvidgkart">"Цей магазин - справжня знахідка для любителів кросівок! Величезний
+                            вибір моделей і розмірів, які можна вибрати, і я
+                            була приємно вражена вишуканістю кожної пари. Що ще важливіше - якість на висоті. Мої нові
+                            кросівки виглядають і
+                            відчуваються дуже добре зробленими. Я вдячна магазину за їхню увагу до деталей і якість
+                            обслуговування. Завжди буду
+                            обирати цей магазин для своїх покупок в майбутньому!" </span>
+                    </div>
+                </div>
+                <div class="vidgkard">
+
+                    <div class="vidgkardtop">
+                        <div class="vidgkardtopleft">
+                            <img class="fotovidguk" src="img/julia.png" alt="">
+
+                        </div>
+                        <div class="vidgkardtopright">
+                            <span class="spanvidgkartname" style="margin-top: 30px; margin-left: 12px;"> Юлія
+                                Мороз</span>
+                            <span class="spanvidgkartname" style="margin-top: 10px; margin-left: 12px;">
+                                Спортсмен</span>
+
+                        </div>
+
+
+                    </div>
+                    <div class="vidgkardbottom">
+
+                        <span class="spanvidgkart">"Я просто в захваті від кросівок,
+                            які я купив у цьому магазині! Вони не лише виглядають дуже стильно, але і надзвичайно
+                            зручні.
+                            Обслуговування було також бездоганним - співробітники були
+                            дуже ввічливі та допомогли мені з вибором. Я відчуваю себе в них
+                            чудово і з нетерпінням чекаю на наступний візит!" </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="footright">
+            <div class="footlogo">
+                <a href="index.html">
+                    <img src="img/logobig.png" alt="">
+                </a>
+            </div>
+            <div class="footsecond">
+                <span class="footsecondspan"> © 2022 ТОВ “КРОССВІТ”
+                    Спортивне взуття</span>
+
+            </div>
+            <div class="footthird">
+                <span class="footthirdspan" style="font-size: 32px; margin-top: 24px;"> Для зв`язку з нашим
+                    менежером</span>
+                <span class="footthirdspan" style=" margin-top: 9px;"> +380953355142</span>
+                <span class=" footthirdspan" style=" margin-top: 18px;"> Наші соцмережі:</span>
+
+                <div class="divfootsoc">
+
+
+                    <img src="img/insta.png" style="border-radius: 30%;" alt="">
+                    <img src="img/telega.png" alt="">
+                    <img src="img/facebok.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
